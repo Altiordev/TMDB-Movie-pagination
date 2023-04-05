@@ -1,0 +1,155 @@
+body {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: #19161c;
+    font-family: 'Poppins', sans-serif;
+}
+
+.boxSearch {
+    margin: 10px 0;
+    position: relative;
+}
+
+.search {
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+    background: none;
+    border: 4px solid #ffd52d;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-family: Comic Sans MS;
+    font-size: 26px;
+    color: #ffd52d;
+    outline: none;
+    transition: .5s;
+}
+
+.boxSearch:hover input {
+    width: 350px;
+    background: #3b3640;
+    border-radius: 10px;
+}
+
+.boxSearch i {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translate(-50%, -50%);
+    font-size: 26px;
+    color: #ffd52d;
+    transition: .2s;
+}
+
+.boxSearch:hover i {
+    opacity: 0;
+    z-index: -1;
+}
+
+.box {
+    max-width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card {
+    max-width: 500px;
+    min-height: 575px;
+    background-color: #fff;
+    border: 1px solid black;
+    padding: 25px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card img {
+    margin: 0 auto;
+    width: 500px;
+    height: 281px;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
+}
+
+.card h2 {
+    margin: 0;
+    text-align: center;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.card p {
+    font-size: 8px;
+}
+
+.card p span {
+    font-size: 16px;
+}
+
+.pagenation {
+    position: relative;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    column-gap: 2px;
+}
+
+.pagenation button {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 2px;
+    border: 1px solid #ffd52d;
+}
+
+.active {
+    background-color: #ffd52d;
+    color: #fff;
+    border: none;
+}
+
+.fisrtPage {
+    position: absolute;
+    left: -50px;
+}
+
+@media screen and (max-width: 700px) {
+    .search {
+        padding: 5px;
+        width: 50px;
+        height: 50px;
+        background: none;
+        border: 2px solid #ffd52d;
+        font-size: 18px;
+    }
+    .boxSearch:hover input {
+        width: 250px;
+        background: #3b3640;
+        border-radius: 10px;
+    }
+    .boxSearch i {
+        position: absolute;
+        top: 50%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+        font-size: 15px;
+        color: #ffd52d;
+        transition: .2s;
+    }
+    .card {
+        padding: 8px;
+        min-height: 100%;
+    }
+    .card h2 {
+        font-size: 18px;
+    }
+}
